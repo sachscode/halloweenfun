@@ -1,0 +1,5 @@
+.falling-letter {
+	display: inline-block;
+	position: relative;
+	transition: transform 1s ease-in;
+  }

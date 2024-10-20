@@ -1,0 +1,41 @@
+{
+	"manifest_version": 3,
+	"name": "PrankMonkey",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"48": "icons/icon48.png"
+		}
+	},
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"contentScript.js"
+			]
+		}
+	],
+	"host_permissions": [
+		"<all_urls>"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"sounds/the_end.wav"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	]
+}

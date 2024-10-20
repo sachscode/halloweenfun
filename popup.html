@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prank Selector</title>
+  <style>
+    #prankBanner {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: orange;
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <select id="prankSelector">
+      <option value="prankFade">Fade Out</option>
+      <option value="prankMirror">Mirror</option>
+      <option value="prankRotate">Rotate</option>
+      <option value="prankBlueScreen">Blue Screen</option>
+      <option value="prankShuffle">Shuffle</option>
+    </select>
+    <button id="startPrankButton">Start Prank</button>
+  </div>
+
+  <div id="prankBanner">Happy Halloween!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
